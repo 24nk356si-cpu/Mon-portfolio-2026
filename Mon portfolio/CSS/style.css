@@ -1,90 +1,141 @@
+:root{
+    --violet-doux: #6c63ff;
+    --violet-foncé: #534EDD;
+    --orange-vif: #ffa726;
+    --gris-très-foncé: #333;
+    --gris-très-claire: #f8f8f8;
+    --gris-foncé: #666;
+    --gris-claire: #eee;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    background-color: #ddd;
+    background-color: var(--gris-très-claire);
     background-size: cover;
+    font-family: roboto, sans-serif;
 }
+
 header{
-    background-color: #ffffff; 
-    padding-right: 30px; 
+    background-color: #ffffff;
+    box-shadow: 2px  6px 10px rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top:0;
+    z-index: 100;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
-    padding: 20px;
-    box-shadow: 2px  2px 4px rgba(77, 68, 68, 0.616);
+    padding-right: 30px; 
+    padding: 2rem 3rem;
 }
 
-header a.logo{
-    color: #0856bd;
+header div a{
     text-decoration: none;
-    margin-left: 30px;
-    font-size: 24px;
-    font-family: fantasy;
-}
-header ul{
-    justify-self: flex-end;
-    display: flex;
-}
-
-.list a.Active {
-    color:#0856bd;
-    text-decoration: none;
-    position: relative;
-}
-.list a.Active::after{
-    width: 100%;
-}
-
-.list li {
-    text-decoration: none;
-    font-size: 18px;
-    font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    font-weight: bold;   
     list-style: none;
     margin-top: -10px;
     padding-right: 30px;
 }
-.list li a{
-    color: black;
+
+header a.logo{
+    color: var(--violet-doux);
     text-decoration: none;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-left: 15px;
+}
+ul li{
+    list-style: none;
+}
+
+ul{
+    display: flex;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #04244d;
+    font-size: 1.1rem;
+    font-weight: 600;
+    list-style: none;
+    margin: 10px;
     position: relative;
-    transition: 0.3s;
+    padding: 10px 0;
 }
-.list li a:hover{
-    color:#0856bd;
+
+ul li a:hover{
+    color: var(--violet-doux);
 }
-.list li a::after{
+
+ul li a::after{
     content: "";
     position: absolute;
     left: 0;
     bottom: -5px;
     width: 0;
     height: 5px;
-    background-color: #0856bd;
+    background-color: var(--violet-doux);
     transition: width 0.3s ease;
     border-radius: 5px;
     
 }
-.list li a:hover::after{
+
+ul li a:hover::after{
     width: 100%;    
 }
-h1{
-    color: #0856bd;
-    padding-top: 10vh;
-    margin-left: 28%;
+
+a.Active{
+    color: var(--violet-doux);
+    text-decoration: none;
+    position: relative;
 }
-.Etudiant{
-    margin-left: 33%;
-    font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
+a.Active::after{
+    width: 100%;
 }
+
+
+
+
+.hero{
+    display: flex;
+    line-height: 0.5;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 10rem 2rem;
+}
+
+.hero img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--violet-doux);
+}
+
+.hero h1{
+    color: var(--violet-doux);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.hero p{
+    color: var(--gris-foncé);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    margin-left: 40px;
+}
+
 #projets{
     cursor: pointer;
     padding: 15px 25px;
-    background-color: #0856bd;
+    background-color: var(--violet-doux);
     border-radius: 30px;
     border: 0px ;
     margin-left: 35%;
@@ -97,62 +148,43 @@ h1{
     text-decoration: none;
     color: white;
 }
-.profil{
-    border-radius: 30px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    float: right;
-    padding-top: 4vh;
-    margin-right: 500px;
-    
-}
-.profil img{
-    width: 210px;
-    border-radius: 100px;
-    border: 6px solid #0856bd;
-    
-}
-h2{
-    color: #0856bd;
-    margin-bottom: 20px;
-    position: relative;
-    font-size: 30px;
-}
-h2::after{
-    content: "";
-    width: 40px;
-    height: 3px;
-    background-color: #0856bd;
-    display: block;
-    margin: 8px auto 0;
-}
-.le_corps{
+
+.a_propos{
+    width: 800px;
     font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
     text-align: center;
     justify-self: center;
-    margin-top: 60px;
+    margin-top: 20px;
 }
+
+section h2{
+    color: var(--violet-doux);
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+section h2::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--violet-doux);
+    display: block;
+    margin: 1.4rem auto;
+    border-radius: 5px;
+}
+
+.a_propos p {
+    margin-bottom: 2rem;
+    color: var(--gris-foncé);
+    font-size: 1.3rem;
+}
+
 .udbl{
     text-decoration: none;
-    color: #0856bd;
+    color: var(--violet-doux);
     font-weight: bold;
 }
-h3{
-    color: #0856bd;
-    margin-bottom: 20px;
-    position: relative;
-    font-size: 30px;
-}
-h3::after{
-    content: "";
-    width: 40px;
-    height: 3px;
-    background-color: #0856bd;
-    display: block;
-    margin: 8px auto 0;
-}
+
+
 .mes_competences{
     justify-items: center;
     width:80%;
@@ -163,48 +195,4 @@ h3::after{
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-}
-table{
-    width:70%;
-    border-collapse: collapse;
-    
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 2px  2px 8px rgb( 0, 0, 0.2);
-}
-th{
-    background-color: #0856bd;
-    color: white;
-    padding: 12px;
-    border: none;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-td{
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-tr:hover{
-    background-color: #f1f5f1;
-}
-
-.le_bas{
-    
-    text-align: center;
-    justify-self: center;
-    margin-top: 20px;
-    font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-}
-.mon_footer{
-    font-family: Arial;
-    background-color: #0856bd;
-    color: white;
-    align-items: center;
-    padding: 20px;
-}
-ion-icon{
-    fill: white;
-    padding-inline: 4px;
 }

@@ -8,41 +8,51 @@
     <title>Mon portfolio 2026</title>
 </head>
 <body>
-    <header><a class="logo" href="logo">Mon portfolio</a>
-        <ul class="list">
-            <li><a class="Active" href="index.html">Acceuil</a></li>
-            <li><a href="projets.html">Projets</a></li>
-            <li><a href="passions.html">Passions</a></li>
-            <li><a href="divertissements.html">Divertissements</li></a>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
+    <header>
+        <div><a class="logo" href="logo">Mon portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a class="Active" href="index.html">Acceuil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="divertissements.html">Divertissements</li></a>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="profil">
-        <img src="Images/portrait_kbj.jpg" alt="portrait_kbj" width="200">
-    </div>
-    <h1>Bonjour, je suis Gloire Kabundji</h1><br>
-    <p class="Etudiant">Etudiant en L2 et passionné par le web</p><br>
-    <button id="projets"><a href="projets.html">Voir mes projets</a>
-    </button>
-    <br><br>
-    <section class="le_corps">
+    <main>
+    <section class="hero">
+        <div>
+            <h1>Bonjour, je suis Gloire Kabundji</h1><br>
+            <p class="Etudiant">Etudiant en L2 et passionné par le web</p><br>
+            <button id="projets"><a href="projets.html">Voir mes projets</a>
+            </button>
+        </div> 
+        <div>
+            <img src="Images/portrait_kbj.jpg" alt="portrait_kbj" width="200">
+        </div>
+    </section>
+
+    <section class="a_propos">
         <h2>A propos de moi</h2><br>
         <p>Bonjour, je m'appelle Gloire Kabundji et je suis étudiant dynamique <br>
-        et motivé en informatique à l'<a  href="https://udbl.ac.cd" class="udbl"><span>UDBL</span></a>. Passionné par les développements web, l'intelligence artificielle <br>
+        et motivé en informatique à l'<a  href="https://udbl.ac.cd" class="udbl"><span>UDBL</span></a>. Passionné par les développements web, l'intelligence artificielle, les réseaux informatiques <br>
         et les designs graphiques, je suis constamment à la recherche des nouvelles <br>
-        opportunités d'apprentissage et des défis stimulants.</p><br>
+        opportunités d'apprentissage et des défis stimulants.</p>
         <p>Au cours de mes études, j'ai développé des solides compétences en programmation. <br>
             Je suis une personne rigoureuse, créative et j'aime travailler en équipe pour atteindre des objectifs communs. <br>
             Mon objectif est de contribuer à des projets innovants, <br>
             trouver un stage et maîtriser les Frameworks Lalavel</p>
     </section>
     <section class="mes_competences">
-        <h3>Mes compétences</h3><br>
+        <h2>Mes compétences</h2><br>
         <table>
-            <tr>
-                <th>CATEGORIES</th>
-                <th>COMPETENCES</th>
-                <th>NIVEAU</th>
+            <thead>
+                <tr>
+                    <th>CATEGORIES</th>
+                    <th>COMPETENCES</th>
+                    <th>NIVEAU</th>
+            </thead>
             </tr>
             <tr>
                 <td>Programmation</td>
@@ -72,6 +82,7 @@
         
         </table>
     </section><br>
+    </main>
     <div class="mon_footer">
 <footer class="le_bas">
             <p>©CopyRight 2026 Gloire Kabundji. Tous droits réservés.</p><br>
