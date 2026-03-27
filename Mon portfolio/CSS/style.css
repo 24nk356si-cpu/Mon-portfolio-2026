@@ -172,18 +172,6 @@ section h2::after{
     border-radius: 5px;
 }
 
-.a_propos p {
-    margin-bottom: 2rem;
-    color: var(--gris-foncé);
-    font-size: 1.3rem;
-}
-
-.udbl{
-    text-decoration: none;
-    color: var(--violet-doux);
-    font-weight: bold;
-}
-
 
 .mes_competences{
     justify-items: center;
@@ -195,4 +183,79 @@ section h2::after{
     padding: 30px;
     border-radius: 10px;
     text-align: center;
+}
+
+.udbl{
+    text-decoration: none;
+    color: var(--violet-doux);
+    font-weight: bold;
+}
+
+.a_propos p {
+    margin-bottom: 2rem;
+    color: var(--gris-foncé);
+    font-size: 1.3rem;
+}
+
+.mes_competences table {
+    width:70%;
+    margin: auto 0;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.mes_competences table th,.mes_competences table td{
+    padding: 15px;
+}
+
+.mes_competences table thead{
+    background-color: var(--violet-doux);
+    color: white;
+    text-transform: uppercase;
+}
+
+.mes_competences table tbody td{
+    /* Ajouter une bordure de 1px en bas de chaque*/
+    border-bottom: 1px solid var(--gris-claire);
+
+}
+
+.mes_competences table tbody td:nth-child(even) {
+    transition: background-color 0.3s ease;
+
+}
+
+.mes_competences table tbody tr{
+    background-color: #fdfdfd;
+
+}
+.mes_competences table tbody tr:hover{
+    background-color: #f0f0f0;
+}
+
+footer{
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+
+}
+footer p{
+    font-family: Arial;
+    color: white;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+footer a{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    margin:  0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer a{
+    color: var(--orange-vif);
+    transform: translateY(-3px);
 }
