@@ -17,7 +17,7 @@
 body{
     background-color: var(--gris-très-claire);
     background-size: cover;
-    font-family: roboto, sans-serif;
+    font-family: roboto;
 }
 
 header{
@@ -58,7 +58,7 @@ ul{
 
 ul li a{
     text-decoration: none;
-    color: #04244d;
+    color: black;
     font-size: 1.1rem;
     font-weight: 600;
     list-style: none;
@@ -139,22 +139,26 @@ a.Active::after{
     border-radius: 30px;
     border: 0px ;
     margin-left: 35%;
+    transition: 0.3s ease;
 }
 #projets a{
     width: 300px;
-    font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: roboto;
     font-weight: 600;
     font-size: medium;
     text-decoration: none;
     color: white;
 }
+#projets:hover{
+    background-color: var(--violet-foncé);
+}
 
 .a_propos{
     width: 800px;
-    font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: roboto;
     text-align: center;
     justify-self: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 section h2{
@@ -173,28 +177,29 @@ section h2::after{
 }
 
 
-.mes_competences{
-    justify-items: center;
-    width:80%;
-    font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    justify-self: center;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-
 .udbl{
     text-decoration: none;
     color: var(--violet-doux);
     font-weight: bold;
 }
 
+
+
 .a_propos p {
     margin-bottom: 2rem;
     color: var(--gris-foncé);
     font-size: 1.3rem;
+}
+.mes_competences{
+    justify-items: center;
+    width:80%;
+    font-family: roboto;
+    font-weight: 600;
+    justify-self: center;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: start;
 }
 
 .mes_competences table {
@@ -209,7 +214,9 @@ section h2::after{
 .mes_competences table th,.mes_competences table td{
     padding: 15px;
 }
-
+.mes_competences thead th{
+    text-align: start;
+}
 .mes_competences table thead{
     background-color: var(--violet-doux);
     color: white;
@@ -236,26 +243,29 @@ section h2::after{
 }
 
 footer{
-    margin-top: 3rem;
+    font-family: roboto;
+    margin-top: 2.5rem;
     background-color: var(--violet-doux);
-
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
 }
 footer p{
-    font-family: Arial;
     color: white;
+    padding-top: 15px;
     margin-bottom: 1.2rem;
     text-align: center;
 }
 
 footer a{
-    display: inline-block;
+    margin-top: 15px;
     font-size: 1.6rem;
     color: white;
-    margin:  0 10px;
     transition: color 0.3s ease, transform 0.2s ease;
+    padding: 10px;
 }
 
-footer a{
+footer a:hover{
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
